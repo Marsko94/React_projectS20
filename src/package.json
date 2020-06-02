@@ -1,0 +1,21 @@
+{
+  "name": "web_api_project_skogvold",
+  "version": "1.0.0",
+  "description": "adding concurrently",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "server-install": "cd server && npm install",
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && npm run start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Skogvold",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
